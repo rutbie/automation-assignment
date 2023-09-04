@@ -1,0 +1,31 @@
+{
+  "name": "automation-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rutbie/automation-assignment.git"
+  },
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npm test -- --headed",
+    "report-allure:open": "allure generate allure-results -o allure-report --clean && allure open allure-report",
+    "report-pw:open": "npx playwright show-report test-reports",
+    "lint": "npx eslint .",
+		"lint:fix": "npm run lint -- --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.37.1",
+    "@typescript-eslint/eslint-plugin": "^6.5.0",
+    "@typescript-eslint/parser": "^6.5.0",
+    "allure-commandline": "^2.24.0",
+    "allure-playwright": "^2.6.0",
+    "eslint": "^8.48.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}

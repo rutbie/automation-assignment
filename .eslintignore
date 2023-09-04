@@ -1,0 +1,6 @@
+eslintrc.cjs
+node_modules
+test-reports
+test-results
+allure-report
+allure-results
