@@ -9,7 +9,7 @@ export default class HomePage {
 
 	constructor(page: Page) {
 		this.page = page;
-        this.menu = new Menu(page);
+		this.menu = new Menu(page);
 	}
 
 	navigate = async () => {
