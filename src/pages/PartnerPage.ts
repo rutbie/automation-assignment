@@ -12,5 +12,4 @@ export default class PartnerPage {
 	assertMainTitleCorrect = async (title: string) => {
 		await expect(this.title).toHaveText(title);
 	}
-    
 }

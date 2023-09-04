@@ -24,8 +24,8 @@ test('open partner page', async ({ page }) => {
 	await platformIntegrationsPage.assertAmountOfPartnersCard(4);
   
 	await platformIntegrationsPage.clickPartnerCardByNumber(3);
-	/* Alternatively it could be clicked by title
-  await platformIntegrationsPage.clickPartnerCardByTitle('BigCommerce'); */
+	// Alternatively it could be clicked by title
+	// await platformIntegrationsPage.clickPartnerCardByTitle('BigCommerce')
 
 	const partnerPage = new PartnerPage(page);
 	await partnerPage.assertMainTitleCorrect('BigCommerce');

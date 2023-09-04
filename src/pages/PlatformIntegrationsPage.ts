@@ -48,5 +48,4 @@ export default class PlatformIntegrationsPage {
 	assertAmountOfPartnersCard = async (amount: number) => {
 		await expect(await this.partnerListCards.count()).toBe(amount);
 	}
-    
 }
